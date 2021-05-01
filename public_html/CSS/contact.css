@@ -1,0 +1,301 @@
+.container-button{
+    width: 3%;
+    height: 6%;
+    background: white;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1030;
+    margin-right: 3%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#toggle{
+    display: none;
+}
+
+.icon-user{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    position: fixed;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    width: 32%;
+    padding: 2%;
+    bottom: 10%;
+    right: 1%;
+    z-index: 1030;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #00bbb8;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    cursor: pointer;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 380px) {
+    .container-button{
+        width: 11%;
+        height: 6%;
+        background: white;
+        position: fixed;
+        right: 1%;
+        bottom: 3%;
+        z-index: 1030;
+        margin-right: 6%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .card{
+        position: fixed;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        width: 87%;
+        padding: 5%;
+        bottom: 10%;
+        right: 4%;
+        z-index: 1030;
+    }
+}
+@media (max-width: 600px) and (min-width: 381px) {
+    .container-button{
+        width: 6%;
+        height: 6%;
+        background: white;
+        position: fixed;
+        right: 0%;
+        bottom: 3%;
+        z-index: 1030;
+        margin-right: 0%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .card{
+        position: fixed;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        width: 87%;
+        padding: 5%;
+        bottom: 12%;
+        right: 2%;
+        z-index: 1030;
+    }
+}
+@media (max-width: 767px) and (min-width: 602px){
+    .container-button{
+        width: 5%;
+        height: 6%;
+        background: white;
+        position: fixed;
+        right: 0%;
+        bottom: 3%;
+        z-index: 1030;
+        margin-right: 0%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .card{
+        position: fixed;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        width: 87%;
+        padding: 5%;
+        bottom: 12%;
+        right: 2%;
+        z-index: 1030;
+    }
+}
+@media (max-width:1000px) and (min-width: 770px){
+    .container-button{
+        width: 4%;
+        height: 6%;
+        background: white;
+        position: fixed;
+        right: 0%;
+        bottom: 3%;
+        z-index: 1030;
+        margin-right: 0%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .card{
+        position: fixed;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        width: 51%;
+        padding: 5%;
+        bottom: 12%;
+        right: 2%;
+        z-index: 1030;
+    }
+}
+@media (max-width:1080px) and (min-width: 1001px){
+    .container-button{
+        width: 3%;
+        height: 6%;
+        background: white;
+        position: fixed;
+        right: 0%;
+        bottom: 3%;
+        z-index: 1030;
+        margin-right: 0%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .card{
+        position: fixed;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        width: 34%;
+        padding: 5%;
+        bottom: 12%;
+        right: 2%;
+        z-index: 1030;
+    }
+}
+@media (max-width:1400px) and (min-width: 1081px){
+    .container-button{
+        width: 3%;
+        height: 6%;
+        background: white;
+        position: fixed;
+        right: 0%;
+        bottom: 3%;
+        z-index: 1030;
+        margin-right: 0%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .card{
+        position: fixed;
+        display: -ms-flexbox;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        width: 32%;
+        padding: 5%;
+        bottom: 12%;
+        right: 2%;
+        z-index: 1030;
+    }
+}

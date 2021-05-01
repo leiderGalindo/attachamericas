@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <link rel="shortcut icon" href="../images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').click(function() {
+                var destino = $(this.hash);
+                if (destino.length == 0) {
+                    destino = $('a[name="' + this.hash.substr(1) + '"]');
+                }
+                if (destino.length == 0) {
+                    destino = $('html');
+                }
+                $('html, body').animate({ scrollTop: destino.offset().top }, 1000);
+                return false;
+            });
+        });
+    </script>
+
+    <title>Attach Americas</title>
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../CSS/style.css" rel="stylesheet">
+    <link href="../CSS/flexslider.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script defer src="../js/jquery.flexslider.js"></script>
+
+    <style type="text/css">
+        .container-button{
+            width: 3%;
+            height: 6%;
+            background: white;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: 1030;
+            margin-right: 3%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+
+        }
+
+        #toggle{
+            display: none;
+        }
+
+        .icon-user{
+            display: flex;
+            align-items: center;
+        }
+
+        .card{
+            position: fixed;
+            display: -ms-flexbox;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+            width: 32%;
+            padding: 2%;
+            bottom: 10%;
+            right: 1%;
+            z-index: 1030;
+        }
+
+        .card-body {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 1.25rem;
+        }
+
+        .form-control{
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            padding: .375rem .75rem;
+            margin-bottom: 4px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: #00bbb8;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            cursor: pointer;
+        }
+
+        .div-button{
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 380px) {
+            .container-button{
+                width: 11%;
+                height: 6%;
+                background: white;
+                position: fixed;
+                right: 1%;
+                bottom: 3%;
+                z-index: 1030;
+                margin-right: 6%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+            }
+
+            .card{
+                position: fixed;
+                display: -ms-flexbox;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                border-radius: .25rem;
+                width: 87%;
+                padding: 5%;
+                bottom: 10%;
+                right: 4%;
+                z-index: 1030;
+            }
+        }
+        @media (max-width: 600px) and (min-width: 381px) {
+            .container-button{
+                width: 6%;
+                height: 6%;
+                background: white;
+                position: fixed;
+                right: 0%;
+                bottom: 3%;
+                z-index: 1030;
+                margin-right: 0%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+            }
+
+            .card{
+                position: fixed;
+                display: -ms-flexbox;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                border-radius: .25rem;
+                width: 87%;
+                padding: 5%;
+                bottom: 12%;
+                right: 2%;
+                z-index: 1030;
+            }
+        }
+        @media (max-width: 767px) and (min-width: 602px){
+            .container-button{
+                width: 5%;
+                height: 6%;
+                background: white;
+                position: fixed;
+                right: 0%;
+                bottom: 3%;
+                z-index: 1030;
+                margin-right: 0%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+            }
+
+            .card{
+                position: fixed;
+                display: -ms-flexbox;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                border-radius: .25rem;
+                width: 87%;
+                padding: 5%;
+                bottom: 12%;
+                right: 2%;
+                z-index: 1030;
+            }
+        }
+        @media (max-width:1000px) and (min-width: 770px){
+            .container-button{
+                width: 4%;
+                height: 6%;
+                background: white;
+                position: fixed;
+                right: 0%;
+                bottom: 3%;
+                z-index: 1030;
+                margin-right: 0%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+            }
+
+            .card{
+                position: fixed;
+                display: -ms-flexbox;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                border-radius: .25rem;
+                width: 51%;
+                padding: 2%;
+                bottom: 12%;
+                right: 2%;
+                z-index: 1030;
+            }
+        }
+        @media (max-width:1080px) and (min-width: 1001px){
+            .container-button{
+                width: 3%;
+                height: 6%;
+                background: white;
+                position: fixed;
+                right: 0%;
+                bottom: 3%;
+                z-index: 1030;
+                margin-right: 0%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+            }
+
+            .card{
+                position: fixed;
+                display: -ms-flexbox;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                border-radius: .25rem;
+                width: 34%;
+                padding: 2%;
+                bottom: 12%;
+                right: 2%;
+                z-index: 1030;
+            }
+        }
+        @media (max-width:1400px) and (min-width: 1081px){
+            .container-button{
+                width: 3%;
+                height: 6%;
+                background: white;
+                position: fixed;
+                right: 0%;
+                bottom: 3%;
+                z-index: 1030;
+                margin-right: 0%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+            }
+
+            .card{
+                position: fixed;
+                display: -ms-flexbox;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                border-radius: .25rem;
+                width: 32%;
+                padding: 2%;
+                bottom: 12%;
+                right: 2%;
+                z-index: 1030;
+            }
+        }
+    </style>
+
+    <style type="text/css">
+        .slider3{
+            width: 50%;
+            right: 29px;
+            top: 10%;
+            z-index: 1;
+            margin: auto;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .slider3 .carousel3{
+            width: 400%;
+            padding: 0;
+            display: flex;
+        }
+
+        .animation{
+            animation: cambio 90s infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        .slider3 .carousel3 li{
+            width: 100%;
+            list-style: none;
+        }
+
+        .slider3 video{
+            width: 100%;
+            height: 76%
+        }
+
+        .slider3 img{
+            width: 100%;
+        }
+
+        .slider3 .carousel3 li:target{
+
+        }
+
+        .menu-slider{
+            text-align: center;
+            margin-top: 0%;
+        }
+
+        .menu-video{
+            margin-top: -13%;
+        }
+
+        .menu-slider li{
+            display: inline-block;
+            text-align: center;
+            width: 1%;
+            height: 10px;
+
+        }
+
+        .menu-slider li input[type="radio"]{
+            display: none;
+        }
+
+        .menu-slider li .menu-slider-a{
+            width: 100%;
+            height: 100%;
+            padding: 1%;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        .slider_btn{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.7);
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            font-weight: bold;
+            font-family: monospace;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 4;
+        }
+
+        .slider_btn:hover {
+            background: #fff;
+        }
+
+        .slider_btn_left{
+            left: 10px;
+        }
+
+        .slider_btn_right{
+            right: 10px;
+        }
+
+        @keyframes cambio {
+            0% {margin-left: 0;}
+            88% {margin-left: 0;}
+
+            89% {margin-left: -100%;}
+            93% {margin-left: -100%;}
+
+            94% {margin-left: -200%;}
+            97% {margin-left: -200%;}
+
+            98% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+        }
+
+        @media (max-width: 380px) {
+            .slider3{
+                width: 97%;
+                right: 0;
+                top: 31%;
+                z-index: 1;
+                margin: auto;
+                position: inherit;
+                overflow: hidden;
+            }
+            .menu-slider{
+                text-align: center;
+                margin-top: 0%;
+            }
+
+            .menu-video{
+                margin-top: -13%;
+            }
+
+            .menu-slider li{
+                display: inline-block;
+                text-align: center;
+                width: 3%;
+                height: 12px;
+
+            }
+
+            .slider_btn {
+                position: absolute;
+                width: 32px;
+                height: 33px;
+                background: rgba(255,255,255,0.7);
+                top: 35%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                font-weight: bold;
+                font-family: monospace;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 4;
+                display: none;
+            }
+        }
+        @media (max-width: 600px) and (min-width: 381px) {
+            .slider3{
+                width: 97%;
+                right: 0;
+                top: 31%;
+                z-index: 1;
+                margin: auto;
+                position: inherit;
+                overflow: hidden;
+            }
+            .menu-slider{
+                text-align: center;
+                margin-top: 0%;
+            }
+
+            .menu-video{
+                margin-top: -13%;
+            }
+
+            .menu-slider li{
+                display: inline-block;
+                text-align: center;
+                width: 2%;
+                height: 8px;
+
+            }
+
+            .slider_btn {
+                position: absolute;
+                width: 32px;
+                height: 33px;
+                background: rgba(255,255,255,0.7);
+                top: 38%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                font-weight: bold;
+                font-family: monospace;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 4;
+            }
+        }
+        @media (max-width: 767px) and (min-width: 601px){
+            .slider3{
+                width: 97%;
+                right: 0;
+                top: 31%;
+                z-index: 1;
+                margin: auto;
+                position: inherit;
+                overflow: hidden;
+                margin-top: 1%;
+            }
+            .menu-slider{
+                text-align: center;
+                margin-top: 0%;
+            }
+
+            .menu-video{
+                margin-top: -13%;
+            }
+
+            .menu-slider li{
+                display: inline-block;
+                text-align: center;
+                width: 2%;
+                height: 11px;
+
+            }
+
+            .slider_btn {
+                position: absolute;
+                width: 32px;
+                height: 33px;
+                background: rgba(255,255,255,0.7);
+                top: 43%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                font-weight: bold;
+                font-family: monospace;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 4;
+            }
+        }
+        @media (max-width:900px) and (min-width: 768px){
+            .slider3{
+                width: 97%;
+                right: 0;
+                top: 31%;
+                z-index: 1;
+                margin: auto;
+                position: inherit;
+                overflow: hidden;
+                margin-top: 4%;
+            }
+            .menu-slider{
+                text-align: center;
+                margin-top: 0%;
+            }
+
+            .menu-video{
+                margin-top: -13%;
+            }
+
+            .menu-slider li{
+                display: inline-block;
+                text-align: center;
+                width: 1%;
+                height: 8px;
+
+            }
+
+            .slider_btn {
+                position: absolute;
+                width: 32px;
+                height: 33px;
+                background: rgba(255,255,255,0.7);
+                top: 52%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                font-weight: bold;
+                font-family: monospace;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 4;
+            }
+        }
+        @media (max-width:1080px) and (min-width: 901px){
+            .slider3{
+                width: 50%;
+                right: 0;
+                top: 31%;
+                z-index: 1;
+                margin: auto;
+                position: absolute;
+                overflow: hidden;
+            }
+            .menu-slider{
+                text-align: center;
+                margin-top: 0%;
+            }
+
+            .menu-video{
+                margin-top: -13%;
+            }
+
+            .menu-slider li{
+                display: inline-block;
+                text-align: center;
+                width: 2%;
+                height: 10px;
+
+            }
+
+            .slider_btn {
+                position: absolute;
+                width: 32px;
+                height: 33px;
+                background: rgba(255,255,255,0.7);
+                top: 52%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                font-weight: bold;
+                font-family: monospace;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 4;
+            }
+        }
+        @media (max-width:1400px) and (min-width: 1081px){
+            .slider3{
+                width: 50%;
+                right: 0;
+                top: 29%;
+                z-index: 1;
+                margin: auto;
+                position: absolute;
+                overflow: hidden;
+            }
+            .menu-slider{
+                text-align: center;
+                margin-top: 0%;/*15%*/
+            }
+
+            .menu-video{
+                margin-top: -13%;
+            }
+
+            .menu-slider li{
+                display: inline-block;
+                text-align: center;
+                width: 2%;
+                height: 10px;
+
+            }
+
+            .slider_btn {
+                position: absolute;
+                width: 32px;
+                height: 33px;
+                background: rgba(255,255,255,0.7);
+                top: 52%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                font-weight: bold;
+                font-family: monospace;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 4;
+            }
+        }
+    </style>
+	
+</head>
+<body>
+	<div class="img-paises"><img src="../images/eng/paises-home2.png"></div>
+	
+	<div class="zona1">
+	<div class="col-izq">
+	<div class="logotipo">
+	<div class="container">
+		<img src="../images/logo.png">
+	</div>
+		</div>
+		<div class="logotipo2">
+		<img src="../images/logo2.png">
+		</div>
+	
+<div class="menuprincipal">
+<nav>
+<ul>
+<li class="active">HOME</li>
+<a href="AboutUs.html"><li>ABOUT US</li></a>
+<a href="Serives-Solutions.html"><li>SERVICES AND SOLUTIONS</li></a>
+<a href="#footer" id="container-button"><li class="fin">CONTACT</li></a>
+	
+</ul>
+<div class="handle"><i class="fa fa-bars" id="icon-menu-bard"></i></div>
+</nav>
+<script>
+    $('.handle').on('click', function(){
+        $('nav ul').toggleClass('showing');
+    });
+</script>
+	 
+	<div class="redes">    
+        <a href="https://attachamericas.com/"><img src="../img/bandera españa.png" class="bandera-es"></a>
+        <a href="https://attachamericas.com/eng/"><img src="../img/bandera estados unidos.png" class="bandera-eng"></a>
+    </div>
+</div>
+		
+</div>
+	<div class="col-top"> <img src="../images/shin.png"></div>
+	<div class="col-right"><div class="border-right"><img src="../images/shin.png"></div></div> 
+		<div class="contenido">
+
+
+            <div class="container-slider">
+                <div class="slider3" id="slider3">
+                    <ul class="carousel3 animation" style="margin-bottom: 0;">
+                        <li id="slider-0" class="slider3_section">
+                            <img src="../images/eng/Imagen-Attach.jpg" id="img-video" style="cursor: pointer;" title="click to play video">
+                            <video controls id="video-slider" style="display: none;">
+                                <source src="../img/ATTACH_INGLES_V_1.mp4">
+                            </video>
+                            <section class="flex-caption"></section>
+                        </li>
+                        <li id="slider-1" class="slider3_section">
+                            <a href="Serives-Solutions.html#marketing">
+                                <img src="../images/eng/marketing2.png">
+                                <section class="flex-caption"></section>
+                            </a>
+                        </li>
+                        <li id="slider-2" class="slider3_section">
+                            <a href="Serives-Solutions.html#generacion">
+                                <img src="../images/eng/generation.png">
+                                <section class="flex-caption"></section>
+                            </a>
+                        </li>
+                        <li id="slider-3" class="slider3_section">
+                            <a href="Serives-Solutions.html#consultoria">
+                                <img src="../images/eng/consulting.png">
+                                <section class="flex-caption"></section>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu-slider">
+                        <li class="menu-slider-li">
+                            <input type="radio" id="sbutton0" name="sradio">
+                            <label for="sbutton0" id="slider_0" class="menu-slider-a"></label>
+                        </li>
+                        <li class="menu-slider-li">
+                            <input type="radio" id="sbutton1" name="sradio">
+                            <label for="sbutton1" id="slider_1" class="menu-slider-a"></label>
+                        </li>
+                        <li class="menu-slider-li">
+                            <input type="radio" id="sbutton2" name="sradio">
+                            <label for="sbutton2" id="slider_2" class="menu-slider-a"></label>
+                        </li>
+                        <li class="menu-slider-li">
+                            <input type="radio" id="sbutton3" name="sradio">
+                            <label for="sbutton3" id="slider_3" class="menu-slider-a"></label>
+                        </li>
+                    </ul>
+                    <input type="hidden" id="valBtn" value="0">
+                    <div class="slider_btn slider_btn_right" id="slider_btn_right">&#62;</div>
+                    <div class="slider_btn slider_btn_left" id="slider_btn_left">&#60;</div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                $('#img-video').on('click', function(){
+                    $('#img-video').css("display", "none");
+                    $('#video-slider').css("display", " ");
+
+                    var video=document.getElementById('video-slider'); 
+                    video.play();
+
+                    $('.menu-slider').addClass('menu-video');
+                });
+            </script>
+
+            <script type="text/javascript">
+               $('.slider_btn').on('click', function(){
+
+                    var btn = $(this).attr('id');
+                    var valBtn = $('#valBtn').val();
+
+                    $('.carousel3').removeClass('animation');
+
+                    if (btn == 'slider_btn_left') {
+
+                        if (valBtn == 0) {
+                            $('.carousel3').css("margin-left", "-300%");
+                            $('#valBtn').val('300');
+                        }else{
+                            if (valBtn == 300) {
+                                $('.carousel3').css("margin-left", "-200%");
+                                $('#valBtn').val('200');
+                            }
+                            if (valBtn == 200) {
+                                $('.carousel3').css("margin-left", "-100%");
+                            $('#valBtn').val('100');
+                            }
+                            if (valBtn == 100) {
+                                $('.carousel3').css("margin-left", "0%");
+                                $('#valBtn').val('0');
+                            }
+                        }
+
+                    }
+                    if (btn == 'slider_btn_right') {
+                        if (valBtn == 0) {
+                            $('.carousel3').css("margin-left", "-100%");
+                            $('#valBtn').val('100');
+                        }else{
+                            if (valBtn == 100) {
+                                $('.carousel3').css("margin-left", "-200%");
+                                $('#valBtn').val('200');
+                            }
+                            if (valBtn == 200) {
+                                $('.carousel3').css("margin-left", "-300%");
+                                $('#valBtn').val('300');
+                            }
+                            if (valBtn == 300) {
+                                $('.carousel3').css("margin-left", "0%");
+                                $('#valBtn').val('0');
+                            }
+                        }
+                    }
+                });
+                
+                $('.menu-slider-a').on('click', function(){
+                    var n = $(this).attr('id');
+                    n = n.split('_');
+                    n = n[1];
+                    console.log(n);
+                    $('.menu-slider-a').css("background-color", "white");
+                    $(this).css('background-color','blue');
+                    //$('.slider3_section').css("opacity", "0");
+                    //$('#slider-'+n).css("opacity", "1");
+                    $('.carousel3').removeClass('animation');
+
+                    if ('slider_'+n == 'slider_0') {
+                        $('.carousel3').css("margin-left", "0%");
+                    }
+                    if ('slider_'+n == 'slider_1') {
+                        $('.carousel3').css("margin-left", "-100%");
+                    }
+                    if ('slider_'+n == 'slider_2') {
+                        $('.carousel3').css("margin-left", "-200%");
+                    }
+                    if ('slider_'+n == 'slider_3') {
+                        $('.carousel3').css("margin-left", "-300%");
+                    }
+                });
+            </script>
+
+
+
+
+<!--
+		<div class="destacados">
+			<div class="flexslider2 carousel">
+        <ul class="slides">
+            <li><img src="images/marketing.png"></li>
+			<li><img src="images/generacion.png"></li>
+			<li><img src="images/consultoria.png"></li>
+				</ul>
+			</div>
+		</div>-->
+			</div>
+	<div class="col-bottom"><div class="border-top"><img src="../images/shin.png"></div></div> 
+	
+	</div>
+	
+	<div class="zona2">
+	<div class="clientes">
+		<div class="container">
+			<h2><img src="../images/h.png">Customers</h2>
+			  <div class="flexslider carousel">
+        <ul class="slides">
+            <li>
+                <img src="../images/Logo-Aspect.jpg">
+            </li>
+                       <li>
+                <img src="../images/Logo-Cisco.jpg">
+            </li>            <li>
+                <img src="../images/Logo-Fortinet.jpg">
+            </li>            <li>
+                <img src="../images/Logo-Ibm.jpg">
+            </li>    <li>
+                <img src="../images/Logo-Kimberly.jpg">
+            </li>            <li>
+                <img src="../images/Logo-Microsoft.jpg">
+            </li>            <li>
+                <img src="../images/Logo-Nuance.jpg">
+            </li>            <li>
+                <img src="../images/Logo-Suse.jpg">
+            </li>           <li>
+                <img src="../images/Logo-UL.jpg">
+            </li>
+				  </ul><!--slides-->
+   </div><!--flexslider carousel-->
+
+	
+    
+    <script type="text/javascript">
+        jQuery.noConflict(); 
+        var flex = jQuery.noConflict(); 
+        flex (function(){
+          SyntaxHighlighter.all();
+        });
+        flex (window).load(function(){
+          flex ('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 200,
+            itemMargin: 5,
+            minItems: 1,
+            maxItems: 4,
+            start: function(slider){
+              $('body').removeClass('loading');
+            }
+          });
+        });
+    </script>
+	<script type="text/javascript">
+            jQuery.noConflict(); 
+            var flex = jQuery.noConflict(); 
+            flex (function(){
+              SyntaxHighlighter.all();
+            });
+            flex (window).load(function(){
+              flex ('.flexslider2').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 200,
+                itemMargin: 5,
+                minItems: 1,
+                maxItems: 1,
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+              });
+            });
+    </script>
+    
+			
+		</div>
+		</div>
+	
+	</div>
+	
+	<div id="footer">
+	
+		<div class="container">
+		<h2><img src="../images/h2.png">Contact</h2>
+		<div class="col-footer">
+                <p>
+                    Phone: <a href="tel:+1 305 909 6965" style="color: white;">+1 305 909 6965</a><br><br>
+                    E-mail: <a href="mailto:marketing@attachamericas.com" style="color: white;">marketing@attachamericas.com</a>
+                </p>
+        </div>
+		<div class="col-footer">&nbsp;</div>
+		<div class="col-footer"><img src="../images/attach-bn.png"></div>
+		</div>
+	
+	</div>
+    <div class="card" id="card" style="display: none;">
+        <div class="card-body">
+            <h3>
+                Contact
+            </h3>
+            <form id="form-Contact">
+                <div>
+                    <input type="text" name="name" id="name" class="form-control" value="" placeholder="NAME">
+                </div>
+                <div>
+                    <input type="number" name="phone" id="phone" class="form-control" value="" placeholder="PHONE">
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" class="form-control" value="" placeholder="EMAIL">
+                </div>
+                <div>
+                    <textarea name="message" id="message" class="form-control" placeholder="MESSAGE"></textarea>
+                </div>
+            </form>
+            <div class="div-button">
+                <button class="btn" id="btn-send">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-button">
+        <input type="checkbox" id="toggle">
+        <i class="fa fa-user-circle fa-2x icon-user" aria-hidden="true" style="margin:0px;"></i>
+    </div>
+
+    <script type="text/javascript">
+        $('.container-button').on('click', function(){
+            if (document.getElementById('card').style.display == 'none') {
+                document.getElementById('card').style.display = 'flex';
+            }else{
+                document.getElementById('card').style.display = 'none';
+            }
+        });
+
+        $('#container-button').on('click', function(){
+            if (document.getElementById('card').style.display == 'none') {
+                document.getElementById('card').style.display = 'flex';
+            }else{
+                document.getElementById('card').style.display = 'none';
+            }
+        });
+    </script>
+    <script type="text/javascript" src="../js/contact.js?v=13"></script>
+</body>
+</html>
